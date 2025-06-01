@@ -11,6 +11,11 @@ if (!is_mahasiswa()) {
 $mahasiswa = $_SESSION['user'];
 ?>
 
+<?php if (is_mahasiswa()): ?>
+    <a href="../dashboard/mahasiswa/matkul.php" class="hover:underline">Lihat Dosen & Matkul</a>
+<?php endif; ?>
+
+
 <?php include '../includes/header.php'; ?>
 
 <div class="p-6">
